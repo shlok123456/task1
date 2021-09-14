@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    padding: 100px 30px 10px 30px;
+    color: hsl(234, 12%, 34%);
+}
+h1 {
+    max-width: 410px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+h1 span {
+    font-weight: 200;
+}
+p.hero {
+    max-width: 390px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+@media (min-width: 769px) {
+    body {
+        padding: 70px 10px 10px 10px;
+    }
+    h1 {
+        max-width: 450px;
+        font-size: 36px;
+    }
+    p.hero {
+        max-width: 500px;
+    }
+}
+.card {
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 25px 33px -14px rgba(163, 165, 174, .4);
+    padding: 25px 30px;
+    max-width: 350px;
+}
+.col:first-child .card{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.col:nth-child(2) .card:first-child {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.col:nth-child(2) .card:last-child {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.col:last-child .card {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.card p {
+    max-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: hsl(229, 6%, 66%);
+}
+.card .svg-container {
+    text-align: right;
+}
+@media (min-width: 769px) {
+    .cards-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .cards-container .col {
+        width: 30%;
+    }
+    .card {
+        max-width: 390px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
